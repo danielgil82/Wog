@@ -25,3 +25,7 @@ def start_play():
         print(guess_game.play(difficulty_level))
     else:
         print(currency_roulette_game.play(difficulty_level))
+
+
+if __name__ == "__main__":
+    welcome(input("Please enter your name\n"))
