@@ -1,6 +1,8 @@
 from app import welcome, start_play
+from guess_game import *
 
 welcome(input("Please enter your name\n"))
-game_number, difficulty_level = start_play()
-print(f"User choose game number {game_number}, "
-      f"with difficulty level {difficulty_level}")
+game_number, difficulty = start_play()
+
+play(difficulty)
+
