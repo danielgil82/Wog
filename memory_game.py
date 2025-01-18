@@ -1,6 +1,7 @@
+from Score.utils import screen_cleaner
 import random
 import time
-import os
+
 random.seed(time.time())
 
 LOWER_RANGE = 1
@@ -10,7 +11,7 @@ TIME_SLEEP = 0.7
 def play(difficulty: str):
     generated_sequence = generate_sequence(int(difficulty))
     time.sleep(TIME_SLEEP)
-    os.system('cls' if os.name == 'nt' else 'clear')
+    screen_cleaner()
     user_sequence = get_list_from_user(int(difficulty))
 
     return is_list_equal(generated_sequence, user_sequence)

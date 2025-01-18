@@ -1,4 +1,4 @@
-from utils import validate_input
+from Score.utils import validate_input
 import random
 import time
 
